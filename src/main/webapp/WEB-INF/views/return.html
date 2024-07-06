@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Return Book</title>
+</head>
+<body>
+<h1>Return Book</h1>
+<form th:action="@{/library/books/return}" method="post">
+    <label for="borrowCode">Borrow Code:</label>
+    <input type="text" id="borrowCode" name="borrowCode" required/>
+    <button type="submit">Return</button>
+</form>
+</body>
+</html>
